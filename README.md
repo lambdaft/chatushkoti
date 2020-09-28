@@ -6,6 +6,17 @@ A Javascript library for Vedic 4-valued logic.
 * B - (Both) a binary fuzzy(partial) truth value.
 * N - (Neither) Neither true nor false / Not Applicable.
 
+# NOT Table
+
+| Value     | Not Value  |
+| ------------- | -----:|
+| True      | False |
+| Both      | Both |
+| Neither      | Neither |
+| False       | True |
+
+
+
 
 <BR>
 
