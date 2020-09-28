@@ -10,3 +10,11 @@ A Javascript library for Vedic 4-valued logic.
 <BR>
 
 * http://www.filosofia.unimi.it/dagostino/wp-content/uploads/2017/05/Belnap.pdf
+* https://github.com/sebs/es6-fuzz
+* https://airccj.org/CSCP/vol7/csit77406.pdf
+* http://www.pitt.edu/~belnap/howacomputershouldthink.pdf
+* https://projecteuclid.org/download/pdf_1/euclid.ndjfl/1063372199
+* https://www.ijcai.org/Proceedings/97-1/Papers/021.pdf
+* http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.98.6984&rep=rep1&type=pdf
+*
+
