@@ -26,7 +26,7 @@ A Javascript library for Vedic 4-valued logic.
 
 # OR Table
 
-| X AND =>     | True  | Both |  Neither | False |
+| X OR =>     | True  | Both |  Neither | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
 | True     | True  | True |  True | True |
 | Both     | True  | Both |  True | Both |
