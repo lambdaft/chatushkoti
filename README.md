@@ -1,4 +1,4 @@
-# चतुष्कोटी 
+# चतुष्कोटी न्याय 
 A Javascript library for Vedic 4-valued logic.
 
 * T - True.
