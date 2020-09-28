@@ -35,7 +35,8 @@ A Javascript library for Vedic 4-valued logic.
 
 
 <BR>
-
+  
+* https://en.wikipedia.org/wiki/Catu%E1%B9%A3ko%E1%B9%ADi
 * http://www.filosofia.unimi.it/dagostino/wp-content/uploads/2017/05/Belnap.pdf
 * https://github.com/sebs/es6-fuzz
 * https://airccj.org/CSCP/vol7/csit77406.pdf
