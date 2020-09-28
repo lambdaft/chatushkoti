@@ -19,7 +19,19 @@ A Javascript library for Vedic 4-valued logic.
 
 | X AND =>     | True  | Both |  Neither | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
+| True     | True  | Both |  Neither | False |
+| Both      | Both  | Both |  False | False |
+| Neither     | Neither  | False  |  Neither | False |
+| False      | False  | False |  False | False |
 
+# OR Table
+
+| X AND =>     | True  | Both |  Neither | False |
+| ------------- | :-----:| :-----:| :-----:| -----:| 
+| True     | True  | True |  True | True |
+| Both     | True  | Both |  True | Both |
+| Neither     | True  | True |  Neither | Neither |
+| False     | True  | Both |  Neither | False |
 
 
 <BR>
