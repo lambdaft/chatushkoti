@@ -1,5 +1,5 @@
-# चतुष्कोटी Logic 
-A Javascript library for Vedic 4-valued logic.
+# चतुष्कोटी (Quaternary Logic)
+A Javascript library for four-valued logic.
 
 * T - True.
 * F - False.
