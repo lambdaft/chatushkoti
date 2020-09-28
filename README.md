@@ -15,6 +15,10 @@ A Javascript library for Vedic 4-valued logic.
 | Neither      | Neither |
 | False       | True |
 
+# AND Table
+
+| X AND =>     | True  | Both |  Neither | False |
+| ------------- | :-----:| :-----:| :-----:| -----:| 
 
 
 
