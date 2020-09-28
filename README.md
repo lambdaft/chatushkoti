@@ -43,5 +43,4 @@ A Javascript library for Vedic 4-valued logic.
 * https://projecteuclid.org/download/pdf_1/euclid.ndjfl/1063372199
 * https://www.ijcai.org/Proceedings/97-1/Papers/021.pdf
 * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.98.6984&rep=rep1&type=pdf
-*
 
