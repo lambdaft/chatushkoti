@@ -3,7 +3,7 @@ A Javascript library for Vedic 4-valued logic.
 
 * T - True.
 * F - False.
-* B - (Both) a binary fuzzy(partial) truth value.
+* B - (Both) Both true and false / Fractional truth. 
 * N - (Neither) Neither true nor false / Not Applicable.
 
 # NOT Table
