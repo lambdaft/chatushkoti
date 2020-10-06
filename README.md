@@ -3,7 +3,7 @@ A Javascript library for four-valued logic.
 
 * T - True.
 * F - False.
-* B - (Both) Both true and false / Fractional truth. 
+* B - (Both) Both true and false / Fractional truth / Fuzzy truth. 
 * N - (Neither) Neither true nor false / Not Applicable.
 
 # NOT Table
