@@ -57,7 +57,7 @@ var planetory_positions = {
 
 const capitalize = (s) => {
     if (typeof s !== 'string') return '';
-    return s.charAt(0).toUpperCase() + s.slice(1)
+    return s.charAt(0).toUpperCase() + s.slice(1);
 };
 var rashi_names = {
     'mes_01': 'Mesha Rashi or Aries Sign',
@@ -74,7 +74,7 @@ var rashi_names = {
     'mee_12': 'Meena Rashi or Pisces Sign'
 };
 
-var flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SIDEREAL
+var flag = swisseph.SEFLG_SPEED | swisseph.SEFLG_SIDEREAL;
 swisseph.swe_set_ephe_path('C:\\Users\\madhu\\Downloads\\ephe');
 swisseph.swe_julday(date.year, date.month, date.day, date.hour, swisseph.SE_GREG_CAL, function(julday_ut) {
     swisseph.swe_calc_ut(julday_ut, swisseph.SE_SUN, flag, function(body) {
@@ -172,7 +172,7 @@ swisseph.swe_julday(date.year, date.month, date.day, date.hour, swisseph.SE_GREG
 });
 
 function get_rashi(input_degree) {
-    let rashi = ''
+    let rashi = '';
     let rashi_num = input_degree / 30;
     if (rashi_num < 1) {
         rashi = 'mes_01';
@@ -203,65 +203,65 @@ function get_rashi(input_degree) {
 }
 
 function get_nakshatra(input_degree) {
-    let nakshtra = ''
+    let nakshtra = '';
     if (input_degree > 0 & input_degree < 13.33333) {
-        nakshtra = 'ash_01'
+        nakshtra = 'ash_01';
     } else if (input_degree >= 13.33333 & input_degree < 26.66666) {
-        nakshtra = 'bha_02'
+        nakshtra = 'bha_02';
     } else if (input_degree >= 26.66666 & input_degree < 40) {
-        nakshtra = 'kru_03'
+        nakshtra = 'kru_03';
     } else if (input_degree >= 40 & input_degree < 53.33333) {
-        nakshtra = 'roh_04'
+        nakshtra = 'roh_04';
     } else if (input_degree >= 53.33333 & input_degree < 66.66666) {
-        nakshtra = 'mru_05'
+        nakshtra = 'mru_05';
     } else if (input_degree >= 66.66666 & input_degree < 80) {
-        nakshtra = 'ard_06'
+        nakshtra = 'ard_06';
     } else if (input_degree >= 80 & input_degree < 93.33333) {
-        nakshtra = 'pun_07'
+        nakshtra = 'pun_07';
     } else if (input_degree >= 93.33333 & input_degree < 106.666) {
-        nakshtra = 'pus_08'
+        nakshtra = 'pus_08';
     } else if (input_degree >= 106.66666 & input_degree < 120) {
-        nakshtra = 'ash_09'
+        nakshtra = 'ash_09';
     } else if (input_degree >= 120 & input_degree < 133.33333) {
-        nakshtra = 'mag_10'
+        nakshtra = 'mag_10';
     } else if (input_degree >= 133.33333 & input_degree < 146.60) {
-        nakshtra = 'p_p_11'
+        nakshtra = 'p_p_11';
     } else if (input_degree >= 146.60 & input_degree < 160) {
-        nakshtra = 'u_p_12'
+        nakshtra = 'u_p_12';
     } else if (input_degree >= 160 & input_degree < 173.33333) {
-        nakshtra = 'has_13'
+        nakshtra = 'has_13';
     } else if (input_degree >= 173.33333 & input_degree < 186.66666) {
-        nakshtra = 'chi_14'
+        nakshtra = 'chi_14';
     } else if (input_degree >= 186.66666 & input_degree < 200) {
-        nakshtra = 'swa_15'
+        nakshtra = 'swa_15';
     } else if (input_degree >= 200 & input_degree < 213.33333) {
-        nakshtra = 'vis_16'
+        nakshtra = 'vis_16';
     } else if (input_degree >= 213.33333 & input_degree < 226.66666) {
-        nakshtra = 'anu_17'
+        nakshtra = 'anu_17';
     } else if (input_degree >= 226.66666 & input_degree < 240) {
-        nakshtra = 'jye_18'
+        nakshtra = 'jye_18';
     } else if (input_degree >= 240 & input_degree < 253.33333) {
-        nakshtra = 'mul_19'
+        nakshtra = 'mul_19';
     } else if (input_degree >= 253.33333 & input_degree < 266.66666) {
-        nakshtra = 'p_a_20'
+        nakshtra = 'p_a_20';
     } else if (input_degree >= 266.66666 & input_degree < 276.66666) {
-        nakshtra = 'u_a_21'
+        nakshtra = 'u_a_21';
     } else if (input_degree >= 276.66666 & input_degree < 280.88888) {
-        nakshtra = 'abh_22'
+        nakshtra = 'abh_22';
     } else if (input_degree >= 280.88888 & input_degree < 293.33333) {
-        nakshtra = 'shr_23'
+        nakshtra = 'shr_23';
     } else if (input_degree >= 293.33333 & input_degree < 306.666) {
-        nakshtra = 'dha_24'
+        nakshtra = 'dha_24';
     } else if (input_degree >= 306.66666 & input_degree < 320) {
-        nakshtra = 'sha_25'
+        nakshtra = 'sha_25';
     } else if (input_degree >= 320 & input_degree < 333.33333) {
-        nakshtra = 'p_b_26'
+        nakshtra = 'p_b_26';
     } else if (input_degree >= 333.33333 & input_degree < 346.66666) {
-        nakshtra = 'u_b_27'
+        nakshtra = 'u_b_27';
     } else if (input_degree >= 346.66666 & input_degree <= 360) {
-        nakshtra = 'rev_28'
+        nakshtra = 'rev_28';
     }
-    return nakshtra
+    return nakshtra;
 }
 
 function nakshatra_vedha(input_nakshatra, input_graha) {
@@ -269,176 +269,176 @@ function nakshatra_vedha(input_nakshatra, input_graha) {
         rs: '',
         ls: '',
         fs: ''
-    }
+    };
     let vedha_list = [];
     if (input_nakshatra == 'ash_01') {
         vedha = {
             rs: 'jye_18',
             ls: 'roh_04',
             fs: 'p_p_11'
-        }
+        };
     } else if (input_nakshatra == 'bha_02') {
         vedha = {
             rs: 'anu_17',
             ls: 'kru_03',
             fs: 'mag_10'
-        }
+        };
     } else if (input_nakshatra == 'kru_03') {
         vedha = {
             rs: 'bha_02',
             ls: 'vis_16',
             fs: 'shr_23'
-        }
+        };
     } else if (input_nakshatra == 'roh_04') {
         vedha = {
             rs: 'ash_01',
             ls: 'swa_15',
             fs: 'abh_22'
-        }
+        };
     } else if (input_nakshatra == 'mru_05') {
         vedha = {
             rs: 'rev_28',
             ls: 'chi_14',
             fs: 'u_a_21'
-        }
+        };
     } else if (input_nakshatra == 'ard_06') {
         vedha = {
             rs: 'u_b_27',
             ls: 'has_13',
             fs: 'p_a_20'
-        }
+        };
     } else if (input_nakshatra == 'pun_07') {
         vedha = {
             rs: 'p_b_26',
             ls: 'u_p_12',
             fs: 'mul_19'
-        }
+        };
     } else if (input_nakshatra == 'pus_08') {
         vedha = {
             rs: 'sha_25',
             ls: 'p_p_11',
             fs: 'jye_18'
-        }
+        };
     } else if (input_nakshatra == 'ash_09') {
         vedha = {
             rs: 'dha_24',
             ls: 'mag_10',
             fs: 'anu_17'
-        }
+        };
     } else if (input_nakshatra == 'mag_10') {
         vedha = {
             rs: 'ash_09',
             ls: 'shr_23',
             fs: 'bha_02'
-        }
+        };
     } else if (input_nakshatra == 'p_p_11') {
         vedha = {
             rs: 'pus_08',
             ls: 'abh_22',
             fs: 'ash_01'
-        }
+        };
     } else if (input_nakshatra == 'u_p_12') {
         vedha = {
             rs: 'pun_07',
             ls: 'u_a_21',
             fs: 'rev_28'
-        }
+        };
     } else if (input_nakshatra == 'has_13') {
         vedha = {
             rs: 'ard_06',
             ls: 'p_a_20',
             fs: 'u_b_27'
-        }
+        };
     } else if (input_nakshatra == 'chi_14') {
         vedha = {
             rs: 'mru_05',
             ls: 'mul_19',
             fs: 'p_b_26'
-        }
+        };
     } else if (input_nakshatra == 'swa_15') {
         vedha = {
             rs: 'roh_04',
             ls: 'jye_18',
             fs: 'sha_25'
-        }
+        };
     } else if (input_nakshatra == 'vis_16') {
         vedha = {
             rs: 'kru_03',
             ls: 'anu_17',
             fs: 'dha_24'
-        }
+        };
     } else if (input_nakshatra == 'anu_17') {
         vedha = {
             rs: 'vis_16',
             ls: 'bha_02',
             fs: 'ash_09'
-        }
+        };
     } else if (input_nakshatra == 'jye_18') {
         vedha = {
             rs: 'swa_15',
             ls: 'ash_01',
             fs: 'pus_08'
-        }
+        };
     } else if (input_nakshatra == 'mul_19') {
         vedha = {
             rs: 'chi_14',
             ls: 'rev_28',
             fs: 'pun_07'
-        }
+        };
     } else if (input_nakshatra == 'p_a_20') {
         vedha = {
             rs: 'has_13',
             ls: 'u_b_27',
             fs: 'ard_06'
-        }
+        };
     } else if (input_nakshatra == 'u_a_21') {
         vedha = {
             rs: 'u_p_12',
             ls: 'p_b_26',
             fs: 'mru_05'
-        }
+        };
     } else if (input_nakshatra == 'abh_22') {
         vedha = {
             rs: 'p_p_11',
             ls: 'sha_25',
             fs: 'roh_04'
-        }
+        };
     } else if (input_nakshatra == 'shr_23') {
         vedha = {
             rs: 'mag_10',
             ls: 'dha_24',
             fs: 'kru_03'
-        }
+        };
     } else if (input_nakshatra == 'dha_24') {
         vedha = {
             rs: 'shr_23',
             ls: 'ash_09',
             fs: 'vis_16'
-        }
+        };
     } else if (input_nakshatra == 'sha_25') {
         vedha = {
             rs: 'abh_22',
             ls: 'pus_08',
             fs: 'swa_15'
-        }
+        };
     } else if (input_nakshatra == 'p_b_26') {
         vedha = {
             rs: 'p_a_20',
             ls: 'pun_07',
             fs: 'chi_14'
-        }
+        };
     } else if (input_nakshatra == 'u_b_27') {
         vedha = {
             rs: 'p_a_20',
             ls: 'ard_06',
             fs: 'has_13'
-        }
+        };
     } else if (input_nakshatra == 'rev_28') {
         vedha = {
             rs: 'mul_19',
             ls: 'mru_05',
             fs: 'u_p_12'
-        }
+        };
     }
     switch (input_graha) {
         case 'sun':
@@ -478,7 +478,7 @@ function nakshatra_vedha(input_nakshatra, input_graha) {
                 case 'very_fast':
                     vedha_list.push(vedha.ls);
                     return vedha_list;
-            }
+            };
         case 'mercury':
             switch (planetory_speed_type.mercury) {
                 case 'retro':
@@ -579,7 +579,7 @@ var fabrics_positive = 0;
 var fabrics_negative = 0;
 //=================
 var cattle_positive = 0;
-var cattle_negative = 0
+var cattle_negative = 0;
 
 function softPlanet(planet) {
     if (planet == 'sun' || planet == 'mars' || planet == 'saturn' || planet == 'rahu' || planet == 'ketu') {
@@ -630,14 +630,14 @@ function vedh_phal(planet) {
             console.log(statement1 + 'ghee, rice, grass, donkeys, camel, mules and all grains and cloths ' + statement + '.  Effect within 60 days from north side.');
             if (softPlanet) {
                 console.log('oil_oilseeds_negative')
-                console.log('grains_negative')
-                console.log('fabrics_negative')
-                console.log('cattle_negative')
+                console.log('grains_negative');
+                console.log('fabrics_negative');
+                console.log('cattle_negative');
             } else {
-                console.log('oil_oilseeds_positive')
-                console.log('grains_positive')
-                console.log('fabrics_positive')
-                console.log('cattle_positive')
+                console.log('oil_oilseeds_positive');
+                console.log('grains_positive');
+                console.log('fabrics_positive');
+                console.log('cattle_positive');
 
             }
         } else if (value == 'bha_02') {
@@ -722,18 +722,18 @@ function vedh_phal(planet) {
             } else {
                 console.log('sugar_positive')
                 console.log('spices_positive')
-                console.log('grains_positive')
+                console.log('grains_positive');
             }
         } else if (value == 'mag_10') {
             console.log(statement1 + ' all types of oilseeds, oils, chana dal, gur prices ' + statement + '. Effect within 8 month from south direction.');
             if (softPlanet) {
-                console.log('sugar_negative')
-                console.log('oil_oilseeds_negative')
-                console.log('grains_negative')
+                console.log('sugar_negative');
+                console.log('oil_oilseeds_negative');
+                console.log('grains_negative');
             } else {
-                console.log('sugar_negative')
-                console.log('spices_negative')
-                console.log('grains_negative')
+                console.log('sugar_negative');
+                console.log('spices_negative');
+                console.log('grains_negative');
             }
         } else if (value == 'p_p_11') {
             console.log(statement1 + ' worm cloths, woolen, jawar, seasom, oils and silver price ' + statement + '. Effect within 8 month from south direction.');
@@ -777,9 +777,9 @@ function vedh_phal(planet) {
 
 
 function rashi_phal(planet, rashi) {
-    console.log('')
-    console.log('++++++++++Rashi Phal +++++++++++++')
-    console.log('')
+    console.log('');
+    console.log('++++++++++Rashi Phal +++++++++++++');
+    console.log('');
     console.log(capitalize(planet) + ' in ' + rashi_names[rashi] + ' =>');
     if (planet == 'sun') {
         if (rashi == 'mes_01') {
@@ -796,8 +796,8 @@ function rashi_phal(planet, rashi) {
             //--------------------------
         } else if (rashi == 'vru_02') {
             console.log('Silver, gold, gur, sugar, cotton, dryfruits, supari, coconut, oil, oilseeds prices will rise.');
-            console.log('Barley, Chana, Wheat, Matar, Arhar, moong, rice prices will fall.')
-                //--------------------------
+            console.log('Barley, Chana, Wheat, Matar, Arhar, moong, rice prices will fall.');
+            //--------------------------
             pm_positive = pm_positive + 1;
             sugarcane_positive = sugarcane_positive + 1;
             fabrics_positive = fabrics_positive + 1;
@@ -840,7 +840,7 @@ function rashi_phal(planet, rashi) {
         } else if (rashi == 'mee_12') {
             console.log('Oil, flexseed, seasom, sugar, gur and gold prices will rise.');
             console.log('Grains will rise initially and fall in later part of month.');
-            console.log('Silver will fall gradually.')
+            console.log('Silver will fall gradually.');
         }
     } else if (planet == 'moon') {
         if (rashi == 'mes_01') {
@@ -848,7 +848,7 @@ function rashi_phal(planet, rashi) {
             console.log('Gold and silver prices will fall.');
         } else if (rashi == 'vru_02') {
             console.log('Wheat, chana, udad, flexseed, seasom, groundnut, silver and cotton prices will rise.');
-            console.log('Cattle prices will fall.')
+            console.log('Cattle prices will fall.');
         } else if (rashi == 'mit_03') {
             console.log('Cotton, wheat, chana prices will rise in 4 days.');
         } else if (rashi == 'kar_04') {
@@ -883,20 +883,20 @@ function rashi_phal(planet, rashi) {
             console.log('Effects are visible in initial 15 days.');
         } else if (rashi == 'vru_02') {
             console.log('Within a month, red colored things, all type of grains, cotton, safron, oils, gold, silver, copper, zinc and Stocks will rise.');
-            console.log('If with soft planets, rise will be gradual.')
-            console.log('If with hard planets, rise will be steap and sharp.')
+            console.log('If with soft planets, rise will be gradual.');
+            console.log('If with hard planets, rise will be steap and sharp.');
         } else if (rashi == 'mit_03') {
             console.log('Cotton, gur, sugar, flexseed, apheem, copper and all red colored things prices will rise.');
             console.log('If combined with soft planets, these prices will fall.');
-            console.log('If combined with hard planets, above item prices will rise very sharply.')
-            console.log('Silver will be volatile and sideways.')
+            console.log('If combined with hard planets, above item prices will rise very sharply.');
+            console.log('Silver will be volatile and sideways.');
         } else if (rashi == 'kar_04') {
             console.log('Cotton can witness weakness upto 30%.');
             console.log('Rapeseed, caster, flexseed and oil prices will fall.');
-            console.log('Silver will be volatile and sideways.')
-            console.log('All type of grains, gur and sugar prices will rise.')
-            console.log('Cattle prices will rise.')
-            console.log('Aspecting the hard planet will escalate the bullishness while soft planet aspect will soften the price rally.')
+            console.log('Silver will be volatile and sideways.');
+            console.log('All type of grains, gur and sugar prices will rise.');
+            console.log('Cattle prices will rise.');
+            console.log('Aspecting the hard planet will escalate the bullishness while soft planet aspect will soften the price rally.');
         } else if (rashi == 'sim_05') {
             console.log('Silver, gold, copper, steel such metals, weapons, gur, sugar, wheat, flexseed, cotton, chilli and all red colored items prices will rise.');
             console.log('Aspect with hard planets will exagarate the rise while aspect with soft planets will limit and rise.');
@@ -909,7 +909,7 @@ function rashi_phal(planet, rashi) {
         } else if (rashi == 'vrs_08') {
             console.log('Gur, cotton, gold and silver prices will witness rise.');
             console.log('General infletion will prevail.');
-            console.log('Aspect will hard planet will increase the intensity of rise while aspect with soft planets will limit the rise.')
+            console.log('Aspect will hard planet will increase the intensity of rise while aspect with soft planets will limit the rise.');
         } else if (rashi == 'dha_09') {
             console.log('Precious metals, oilseeds, cattles and grains prices will rise.');
             console.log('Cotton will be volatile.');
@@ -919,7 +919,7 @@ function rashi_phal(planet, rashi) {
         } else if (rashi == 'kum_11') {
             console.log('Cotton and silver will be very volatile.');
             console.log('Grains, gur and gold prices will rise.');
-            console.log('Aspect will hard planet will increase the intensity of rise while aspect with soft planets will reverse towards bearishness.')
+            console.log('Aspect will hard planet will increase the intensity of rise while aspect with soft planets will reverse towards bearishness.');
         } else if (rashi == 'mee_12') {
             console.log('Gold, cotton, grass, cattle and wooden items prices will rise.');
             console.log('Silver volatile, initial fall and later rise.');
@@ -930,20 +930,20 @@ function rashi_phal(planet, rashi) {
             console.log('Coral, pearl, gold, silver, wheat, chana, barley, oilseeds, cotton gur, sugar prices will fall.');
         } else if (rashi == 'vru_02') {
             console.log('Within 15 days cotton will fall and then rise.');
-            console.log('Almost every market will behave volatile and sideways.')
-            console.log('Wheat, barley, chana, rice, matar, cotton, aphim and seasom oil prices will rise.')
+            console.log('Almost every market will behave volatile and sideways.');
+            console.log('Wheat, barley, chana, rice, matar, cotton, aphim and seasom oil prices will rise.');
         } else if (rashi == 'mit_03') {
             console.log('Gold, silver and cotton prices will fall in 15 days.');
             console.log('Oil seeds will remain volatile.');
-            console.log('Cattle prices will rise.')
+            console.log('Cattle prices will rise.');
         } else if (rashi == 'kar_04') {
             console.log('Cotton prices will fall by 15%. Silver will remain volatile and remain bullish.');
             console.log('Gur, milk, oil and gold will initially rise and then weaken.');
-            console.log('Cloths prices will fall while grains will remain mixed.')
+            console.log('Cloths prices will fall while grains will remain mixed.');
         } else if (rashi == 'sim_05') {
             console.log('Silver, gold, cotton and acidic+sour prices will rise.');
             console.log('Camphoor, gur and sugar prices will fall.');
-            console.log('Grains will remain mixed.')
+            console.log('Grains will remain mixed.');
         } else if (rashi == 'kan_06') {
             console.log('Cotton and silver prices will fall.');
             console.log('Wheat, barley, chana, sugar, turmeric prices will rise.');
@@ -962,8 +962,8 @@ function rashi_phal(planet, rashi) {
         } else if (rashi == 'kum_11') {
             console.log('Flexseed, cotton prices will fall.');
             console.log('Silver will witness initial weakness followed by some gains.');
-            console.log('Oil and Sugar prices will rise. Grains will remain mixed')
-            console.log('Aspect by soft planets will trigger sharp weakness while aspect by hard planets will trigger strong rally.')
+            console.log('Oil and Sugar prices will rise. Grains will remain mixed');
+            console.log('Aspect by soft planets will trigger sharp weakness while aspect by hard planets will trigger strong rally.');
         } else if (rashi == 'mee_12') {
             console.log('Cotton and sugar prices will fall.');
             console.log('Gold and silver will witness initial rally followed by sharp weakness.');
