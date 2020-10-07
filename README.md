@@ -1,10 +1,10 @@
 # चतुष्कोटी (Quaternary Logic)
 A Javascript library for four-valued logic.
 
-* T - True.
-* F - False.
-* B - (Both) Both true and false / Fractional truth / Fuzzy truth. 
-* N - (Neither) Neither true nor false / Not Applicable.
+* T - True. (Pradnya)
+* F - False. (Mithya)
+* B - (Both) Both true and false / Fractional truth / Fuzzy truth. (Shraddha)
+* N - (Neither) Neither true nor false / Not Applicable. (Vastushunya/Samshay)
 
 # NOT Table
 
