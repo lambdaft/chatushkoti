@@ -1,60 +1,14 @@
-const qlogic = {};
+let t = [true, false]; // Saty
+let f = [false, true]; // Mithya
+let b = [true, true]; // Shradhha
+let n = [false, false]; // Shuny
 
-// Quaternary Logic
+var And = (x, y) => [Math.min(x[0], y[0]), Math.max(x[1], y[1])];
 
-/*
-# NOT Table
+var Or = (x, y) => [Math.max(x[0], y[0]), Math.min(x[1], y[1])];
 
-| Value     | Not Value  |
-| True      | False |
-| Both      | Both |
-| Neither      | Neither |
-| False       | True |
-*/
+var Not = input => [input[1], input[0]];
 
-qlogic.not = input => {
-    if (input === 'True') return 'False';
-    else if (input === 'False') return 'True';
-    else if (input === 'Both') return 'Both';
-    else if (input === 'Neither') return 'Neither';
-    throw new Error("Please pass a valid truth value");
-};
+var Min = Math.min;
 
-/*
-# AND Table
-
-| X AND =>     | True  | Both |  Neither | False |
-| ------------- | :-----:| :-----:| :-----:| -----:| 
-| True     | True  | Both |  Neither | False |
-| Both      | Both  | Both |  False | False |
-| Neither     | Neither  | False  |  Neither | False |
-| False      | False  | False |  False | False |
-
-*/
-
-qlogic.and = input => {
-
-}
-
-const tvl = {};
-tvl.convert = v => {
-    if (v === true) return 1;
-    else if (v === false) return -1;
-    else if (v === undefined) return 0;
-    throw new Error("Please pass a valid truth value");
-};
-tvl.revert = v => {
-    if (v === 1) return true;
-    else if (v === -1) return false;
-    else if (v === 0) return undefined;
-    throw new Error("Please pass a valid number");
-};
-const min = (a, b) => a > b ? b : a;
-const max = (a, b) => a > b ? a : b;
-tvl.not = x => tvl.revert(-tvl.convert(x));
-tvl.and = (x, y) => tvl.revert(min(tvl.convert(x), tvl.convert(y)));
-tvl.or = (x, y) => tvl.revert(max(tvl.convert(x), tvl.convert(y)));
-tvl.xor = (x, y) => tvl.and(tvl.or(x, y), tvl.not(tvl.and(x, y)));
-tvl.imp = (x, y) => tvl.or(tvl.not(x), y);
-tvl.bi = (x, y) => tvl.and(tvl.imp(x, y), tvl.imp(y, x));
-if (typeof(module) !== "undefined") module.exports = tvl;
+console.log(And(t, Not(t)));
