@@ -26,7 +26,7 @@ A Javascript library for four-valued logic.
 
 # OR Table
 
-| X OR =>     | True  | Fuzzy |  Neither | False |
+| X OR =>     | True  | Fuzzy |  Unknown | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
 | True     | True  | True |  True | True |
 | Fuzzy     | True  | Fuzzy |  True | Fuzzy |
