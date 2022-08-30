@@ -19,9 +19,9 @@ A Javascript library for four-valued logic.
 
 | X AND =>     | True  | Both |  Neither | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
-| True     | True  | Both |  Neither | False |
-| Both      | Both  | Both |  False | False |
-| Neither     | Neither  | False  |  Neither | False |
+| True     | True  | Fuzzy |  Unknown | False |
+| Fuzzy      | Fuzzy  | Fuzzy |  False | False |
+| Unknown     | Unknown  | False  |  Unknown | False |
 | False      | False  | False |  False | False |
 
 # OR Table
@@ -30,8 +30,8 @@ A Javascript library for four-valued logic.
 | ------------- | :-----:| :-----:| :-----:| -----:| 
 | True     | True  | True |  True | True |
 | Fuzzy     | True  | Fuzzy |  True | Fuzzy |
-| Neither     | True  | True |  Neither | Neither |
-| False     | True  | Fuzzy |  Neither | False |
+| Unknown     | True  | True |  Unknown | Unknown |
+| False     | True  | Fuzzy |  Unknown | False |
 
 
 <BR>
