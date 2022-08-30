@@ -26,12 +26,12 @@ A Javascript library for four-valued logic.
 
 # OR Table
 
-| X OR =>     | True  | Both |  Neither | False |
+| X OR =>     | True  | Fuzzy |  Neither | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
 | True     | True  | True |  True | True |
-| Both     | True  | Both |  True | Both |
+| Fuzzy     | True  | Fuzzy |  True | Fuzzy |
 | Neither     | True  | True |  Neither | Neither |
-| False     | True  | Both |  Neither | False |
+| False     | True  | Fuzzy |  Neither | False |
 
 
 <BR>
