@@ -3,21 +3,21 @@ A Javascript library for four-valued logic.
 
 * T - True. (Pradnya)
 * F - False. (Mithya)
-* B - (Both) Both true and false / Fractional truth / Fuzzy truth. (Shraddha)
-* N - (Neither) Neither true nor false / Not Applicable. (Vastushunya/Samshay)
+* B - (Fuzzy) Both true and false / Fractional truth / Fuzzy truth. (Shraddha)
+* N - (Unknown) Neither true nor false / Not Applicable/Unknown. (Vastushunya/Samshay)
 
 # NOT Table
 
 | Value     | Not Value  |
 | ------------- | -----:|
 | True      | False |
-| Both      | Both |
-| Neither      | Neither |
+| Fuzzy      | Fuzzy |
+| Unknown      | Unknown |
 | False       | True |
 
 # AND Table
 
-| X AND =>     | True  | Both |  Neither | False |
+| X AND =>     | True  | Fuzzy |  Unknown | False |
 | ------------- | :-----:| :-----:| :-----:| -----:| 
 | True     | True  | Fuzzy |  Unknown | False |
 | Fuzzy      | Fuzzy  | Fuzzy |  False | False |
