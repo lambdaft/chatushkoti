@@ -4,7 +4,7 @@ A Javascript library for four-valued logic.
 * T - True. (Pradnya)
 * F - False. (Mithya)
 * B - (Fuzzy) Both true and false / Fractional truth / Fuzzy truth. (Shraddha)
-* N - (Unknown) Neither true nor false / Not Applicable/Unknown. (Vastushunya/Samshay)
+* N - (Unknown) Neither true nor false / Not Applicable/Unknown/Can't Happen/Impossibility. (Vastushunya/Samshay)
 
 # NOT Table
 
