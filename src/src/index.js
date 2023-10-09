@@ -9,7 +9,7 @@ var or = (x, y) => [Math.max(x[0], y[0]), Math.min(x[1], y[1])];
 
 var not = input => [input[1], input[0]];
 
-var min = Math.min;
+//var min = Math.min;
 
 // AND Test
 /* console.log('and(t, t) :', and(t, t));
