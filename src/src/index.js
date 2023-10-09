@@ -32,4 +32,4 @@ console.log('and(n, f) :', and(n, f));
 console.log('and(n, b) :', and(n, b));
 console.log('and(n, n) :', and(n, n)); */
 
-console.log('and(f, t) :', or([0, 0.40], [0.30, 0.60]));
+//console.log('and(f, t) :', or([0, 0.40], [0.30, 0.60]));
